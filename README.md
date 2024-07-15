@@ -46,7 +46,7 @@ This service collects weather data from the Open Weather API and stores it as JS
 
 2. Run the Docker container
     ```sh
-        docker run -e OPEN_WEATHER_API_KEY=your_api_key_here -p 5000:5000 weather_service
+        docker run -d -p 5000:5000 --name weather-app weather-service
     ```
 
 ## Usage
